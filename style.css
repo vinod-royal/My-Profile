@@ -1,0 +1,333 @@
+
+				*{
+					scroll-behavior:smooth;
+					//font-family: 'Lora', serif;
+				}
+			.navbar-default 
+				{
+					background-color:#22bcea;
+					border-color: #5bc0de;
+					//border:1px solid #000;
+					border-radius:0px;
+					box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				}
+			.navbar
+				{
+					position:sticky !important;
+					top:0px;
+					margin-bottom:0px;
+					z-index:999;
+				}
+			.navbar-default .navbar-nav>li>a 
+				{
+					color: #fff;
+					//font-family:Arial Black;
+					font-size:18px;
+				}
+			.navbar-default .navbar-nav>li:after
+				{
+					content: '';
+					display: block;
+					margin: auto;
+					height: 3px;
+					width: 0px;
+					background: transparent;
+					transition: width .5s ease, background-color .5s ease;
+				}
+			.navbar-default .navbar-nav>li:hover:after
+				{
+					 width: 100%;
+					background:#000;
+				}
+			.navbar-default .navbar-nav>li>a:hover
+				{
+					color:#000;
+				}
+			.navbar-default .navbar-brand 
+				{
+					font-size:35px;
+					color:#fff;
+				}
+			.navbar-default .navbar-brand:hover
+				{
+					color:#000;
+				}
+            .navbar-default .navbar-toggle .icon-bar 
+                {
+                    background-color: #fff;
+                }
+            .navbar-default .navbar-toggle:hover 
+                {
+                    background-color: #6b6c6d;
+                }
+					
+
+				#slider .img
+				{
+					background-image:url("1.jpg");
+					background-size:cover;
+                    background-size:100% 100%;
+					background-repeat:no-repeat;
+					height:85%;
+				}
+
+			#slider h1
+				-
+					width: 0ch;
+					overflow:hidden;	
+					white-space:nowrap;
+					animation:text 5s steps(16) infinite alternate; 
+					border-right:3px solid black;
+					font-size: 35px;
+					text-shadow: 2px 3px 4px black; 
+					color:#000;
+					padding-left:50px;
+				}
+			@keyframes text
+				{
+				0%
+					{
+						width: 0ch;
+					}
+				50%
+					{
+						width: 20ch;
+					}
+				}
+			#about_me
+				{
+					padding-top:20px;
+				}
+            #about_me .border-effect{
+   
+                background: -webkit-linear-gradient(0deg, #80b3ff, #0047b3);
+                -webkit-background-clip: text;-webkit-text-fill-color: transparent;
+                padding-top:30px;
+                //border-bottom:2px solid #000;
+                 //border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+                
+                font-size: 30px;
+                padding: 20px;
+               
+                }
+            
+			#about_me h3 
+				{
+					color:#3385ff;
+					text-decoration:none;
+				}
+			#about_me h2 
+				{
+					color:#000;
+					text-decoration:none;
+					font-weight:500;
+					padding-top:30px;
+				}
+			#about_me img
+				{
+					height:400px;
+					border-radius:5px;
+					padding-top:30px;
+				}
+			#about_me p
+				{
+					color:#888;
+					text-align:justify;
+					//width:75%;
+					//margin-left:125px;
+					font-size:18px;
+					line-height:28px;
+					padding-top:30px;
+					//font-family:Gabriola;
+				}
+            #about_me #border_effect
+                {
+                    padding-top:30px;
+                }
+           
+            #about_me .button
+                {
+                    border-radius: 4px;
+                    background-color: #0047b3;
+                    border: none;
+                    color: #FFFFFF;
+                    text-align: center;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                }
+            #about_me .button span
+                {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.5s;
+                }
+           #about_me .button span:after 
+                {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                }
+            #about_me .button:hover span 
+                {
+                    padding-right: 25px;
+                }
+
+            #about_me .button:hover span:after
+                {
+                      opacity: 1;
+                      right: 0;
+                }
+			#education
+				{
+					background-color:#f2f2f2;
+				}
+            #education .border-effect
+                {
+                    background: -webkit-linear-gradient(0deg, #80b3ff, #0047b3);
+                    -webkit-background-clip: text;-webkit-text-fill-color: transparent;
+                    padding-top:30px;
+                    //border-bottom:2px solid #000;
+                    //border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+                   
+                    font-size: 30px;
+                    padding: 20px;
+                    border-radius: 20px;
+                }
+           
+            #skills #border-effect{
+                    background: -webkit-linear-gradient(0deg, #80b3ff, #0047b3);
+                    -webkit-background-clip: text;-webkit-text-fill-color: transparent;
+                    font-size: 30px;   
+                    
+                    font-size: 30px;
+                    padding: 10px;
+                    border-radius: 20px;
+                }
+          
+            #portfolio #border-effect
+                {
+                    background: -webkit-linear-gradient(0deg, #80b3ff, #0047b3);
+                    -webkit-background-clip: text;-webkit-text-fill-color: transparent;
+                    font-size: 30px;   
+                    
+                    font-size: 30px;
+                    padding: 10px;
+                    border-radius: 20px;
+                }
+            
+			#portfolio input
+				{
+					height:200px;
+					width:100%;
+				}
+			#portfolio .panel-body
+				{
+					border:1px solid #3385ff;
+					border-radius:2px;
+				}
+            #portfolio .image
+                {
+                    overflow: hidden;
+                    margin: 0 auto;
+                    width:100%;   
+                }
+			#portfolio .img
+				{
+					width:100%;
+					height:300px;
+                }
+            #portfolio .img25
+                {
+                     width: 100%;
+            transition: 0.5s all ease-in-out;
+                     overflow: hidden;
+                }
+            #portfolio .img25:hover
+				{
+					//opacity:0.3;
+                  transform: scale(1.5);
+                   
+                }
+            #portfolio .close {
+                    float: right;
+                    font-size: 21px;
+                    font-weight: 700;
+                    line-height: 1;
+                    /* color: #000; */
+                    text-shadow: 0 1px 0 #000;
+                    filter: alpha(opacity=20);
+                    opacity: .9;}
+			#contact 
+				{
+					padding-top:40px;
+				}
+            #contact #border-effect
+                {
+                    background: -webkit-linear-gradient(0deg, #80b3ff, #0047b3);
+                    -webkit-background-clip: text;-webkit-text-fill-color: transparent;
+                    font-size: 30px;   
+                    
+                    font-size: 30px;
+                    padding: 10px;
+                    border-radius: 20px;
+                } 
+            
+			.social a  i
+				{
+					padding:10px;
+					font-size:22px;
+					color:#5bc0de;
+				}
+			.social a  i:hover
+				{
+					//color:#279bbe;
+				}
+            .icon i
+                {
+                    background-color:#fff;
+                    padding:15px;
+                    border-radius:5px;
+                    color:#5bc0de;
+                    cursor: pointer;
+                    box-shadow: 0px 0px 10px 0px blue;
+                }
+            #contact .button
+                {
+                    border-radius: 4px;
+                    background-color: #0047b3;
+                    border: none;
+                    color: #FFFFFF;
+                    text-align: center;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                }
+            #contact .button span
+                {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.5s;
+                }
+           #contact .button span:after 
+                {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                }
+            #contact .button:hover span 
+                {
+                    padding-right: 25px;
+                }
+
+            #contact .button:hover span:after
+                {
+                      opacity: 1;
+                      right: 0;
+                }
